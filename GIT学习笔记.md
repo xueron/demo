@@ -2,9 +2,9 @@
 
 学习使用分布式版本控制系统，主要工作方式：
 
-*本地开发
-*push 到 github
-*push 到 git@oschina
+*  本地开发
+*  push 到 github
+*  push 到 git@oschina
 
 ## 步骤
 
