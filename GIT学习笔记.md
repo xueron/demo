@@ -25,3 +25,7 @@ IdentityFile ~/.ssh/id_rsa
 IdentityFile ~/.ssh/id_dsa
 IdentityFile ~/.ssh/git@github.com
 ```
+
+### 将id_rsa.pub里面的内容添加到gitbuh和oschina的key列表中
+
+
