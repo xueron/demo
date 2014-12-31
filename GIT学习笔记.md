@@ -1,12 +1,16 @@
 # 学习使用git，github以及git@oschina
 
-# 分布式版本控制系统，本地开发，push 到github和git@oschina
+学习使用分布式版本控制系统，主要工作方式：
 
-# 步骤
+*本地开发
+*push 到 github
+*push 到 git@oschina
 
-## 申请github、git.oschina的账号
+## 步骤
 
-## 在开发机器上创建key
+### 申请github、git.oschina的账号
+
+### 在开发机器上创建key
 
 ```shell
 ssh-keygen -t rsa -C "xueron@xxxxx.com"
