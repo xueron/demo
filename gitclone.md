@@ -1,13 +1,13 @@
-== NAME
+## NAME
        git-clone - Clone a repository into a new directory
 
-== SYNOPSIS
+## SYNOPSIS
        git clone [--template=<template_directory>]
                  [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
                  [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
                  [--depth <depth>] [--recursive] [--] <repository> [<directory>]
 
-== DESCRIPTION
+## DESCRIPTION
        Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository
        (visible using git branch -r), and creates and checks out an initial branch that is forked from the cloned repository’s currently
        active branch.
@@ -18,7 +18,7 @@
        This default configuration is achieved by creating references to the remote branch heads under refs/remotes/origin and by
        initializing remote.origin.url and remote.origin.fetch configuration variables.
 
-== OPTIONS
+## OPTIONS
        --local, -l
            When the repository to clone from is on a local machine, this flag bypasses the normal "git aware" transport mechanism and clones
            the repository by making a copy of HEAD and everything under objects and refs directories. The files under .git/objects/
@@ -111,7 +111,7 @@
            given (repo for /path/to/repo.git and foo for host.xz:foo/.git). Cloning into an existing directory is only allowed if the
            directory is empty.
 
-== GIT URLS
+## GIT URLS
        In general, URLs contain information about the transport protocol, the address of the remote server, and the path to the repository.
        Depending on the transport protocol, some of this information may be absent.
 
@@ -183,7 +183,7 @@
        a URL like "git://example.org/path/to/repo.git" will be rewritten to "ssh://example.org/path/to/repo.git" for pushes, but pulls will
        still use the original URL.
 
-== EXAMPLES
+## EXAMPLES
        ·   Clone from upstream:
 
                $ git clone git://git.kernel.org/pub/scm/.../linux-2.6 my2.6
@@ -223,7 +223,7 @@
        a URL like "git://example.org/path/to/repo.git" will be rewritten to "ssh://example.org/path/to/repo.git" for pushes, but pulls will
        still use the original URL.
 
-== EXAMPLES
+## EXAMPLES
        ·   Clone from upstream:
 
                $ git clone git://git.kernel.org/pub/scm/.../linux-2.6 my2.6
@@ -263,7 +263,7 @@
        a URL like "git://example.org/path/to/repo.git" will be rewritten to "ssh://example.org/path/to/repo.git" for pushes, but pulls will
        still use the original URL.
 
-== EXAMPLES
+## EXAMPLES
        ·   Clone from upstream:
 
                $ git clone git://git.kernel.org/pub/scm/.../linux-2.6 my2.6
