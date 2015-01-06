@@ -1,15 +1,14 @@
-
-NAME
+## NAME
        git-tag - Create, list, delete or verify a tag object signed with GPG
 
-SYNOPSIS
+## SYNOPSIS
        git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>]
                <tagname> [<commit> | <object>]
        git tag -d <tagname>...
        git tag [-n[<num>]] -l [--contains <commit>] [<pattern>]
        git tag -v <tagname>...
 
-DESCRIPTION
+## DESCRIPTION
        Adds a tag reference in .git/refs/tags/.
 
        Unless -f is given, the tag must not yet exist in .git/refs/tags/ directory.
@@ -24,7 +23,7 @@ DESCRIPTION
        A GnuPG signed tag object will be created when -s or -u <key-id> is used. When -u <key-id> is not used, the committer identity for
        the current user is used to find the GnuPG key for signing.
 
-OPTIONS
+## OPTIONS
        -a
            Make an unsigned, annotated tag object
 
@@ -67,14 +66,14 @@ OPTIONS
            The name of the tag to create, delete, or describe. The new tag name must pass all checks defined by git-check-ref-format(1).
            Some of these checks may restrict the characters allowed in a tag name.
 
-CONFIGURATION
+## CONFIGURATION
        By default, git tag in sign-with-default mode (-s) will use your committer identity (of the form "Your Name <your@email.address[1]>")
        to find a key. If you want to use a different default key, you can specify it in the repository configuration as follows:
 
            [user]
                signingkey = <gpg-key-id>
 
-DISCUSSION
+## DISCUSSION
    On Re-tagging
        What should you do when you tag a wrong commit and you would want to re-tag?
 
