@@ -1,16 +1,16 @@
-NAME
+## NAME
        git-log - Show commit logs
 
-SYNOPSIS
+## SYNOPSIS
        git log [<options>] [<since>..<until>] [[--] <path>...]
 
-DESCRIPTION
+## DESCRIPTION
        Shows the commit logs.
 
        The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git
        diff-* commands to control how the changes each commit introduces are shown.
 
-OPTIONS
+## OPTIONS
        -p, -u
            Generate patch (see section on generating patches).
 
@@ -631,7 +631,7 @@ OPTIONS
        --do-walk
            Overrides a previous --no-walk.
 
-PRETTY FORMATS
+## PRETTY FORMATS
        If the commit is a merge, and if the pretty-format is not oneline, email or raw, an additional line is inserted before the Author:
        line. This line begins with "Merge: " and the sha1s of ancestral commits are printed, separated by spaces. Note that the listed
        commits may not necessarily be the list of the direct parent commits if you have limited your view of history: for example, if you
@@ -831,7 +831,7 @@ PRETTY FORMATS
                $ git log -2 --pretty=tformat:%h 4da45bef
                $ git log -2 --pretty=%h 4da45bef
 
-GENERATING PATCHES WITH -P
+## GENERATING PATCHES WITH -P
        When "git-diff-index", "git-diff-tree", or "git-diff-files" are run with a -p option, "git diff" without the --raw option, or "git
        log" with the "-p" option, they do not produce the output described above; instead they produce a patch file. You can customize the
        creation of such patches via the GIT_EXTERNAL_DIFF and the GIT_DIFF_OPTS environment variables.
@@ -871,7 +871,7 @@ GENERATING PATCHES WITH -P
                $ git log -2 --pretty=tformat:%h 4da45bef
                $ git log -2 --pretty=%h 4da45bef
 
-GENERATING PATCHES WITH -P
+## GENERATING PATCHES WITH -P
        When "git-diff-index", "git-diff-tree", or "git-diff-files" are run with a -p option, "git diff" without the --raw option, or "git
        log" with the "-p" option, they do not produce the output described above; instead they produce a patch file. You can customize the
        creation of such patches via the GIT_EXTERNAL_DIFF and the GIT_DIFF_OPTS environment variables.
@@ -909,7 +909,7 @@ GENERATING PATCHES WITH -P
        rounded down integer, followed by a percent sign. The similarity index value of 100% is thus reserved for two equal files, while 100%
        dissimilarity means that no line from the old file made it into the new one.
 
-COMBINED DIFF FORMAT
+## COMBINED DIFF FORMAT
        "git-diff-tree", "git-diff-files" and "git-diff" can take -c or --cc option to produce combined diff. For showing a merge commit with
        "git log -p", this is the default format; you can force showing full diff with the -m option. A combined diff format looks like this:
 
@@ -991,7 +991,7 @@ COMBINED DIFF FORMAT
        When shown by git diff-files -c, it compares the two unresolved merge parents with the working tree file (i.e. file1 is stage 2 aka
        "our version", file2 is stage 3 aka "their version").
 
-EXAMPLES
+## EXAMPLES
        git log --no-merges
            Show the whole commit history, but skip any merges
 
@@ -1021,7 +1021,7 @@ EXAMPLES
            branches, and showing full diffs of changes introduced by the merges. This makes sense only when following a strict policy of
            merging all topic branches when staying on a single integration branch.
 
-DISCUSSION
+## DISCUSSION
        At the core level, git is character encoding agnostic.
 
        ·   The pathnames recorded in the index and in the tree objects are treated as uninterpreted sequences of non-NUL bytes. What
